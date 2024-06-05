@@ -1,3 +1,8 @@
+/* General CSS */
+/* attribute to and thanks for inspiration */
+/*  mdn flexbox concepts: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox*/
+/* https://fonts.google.com/  for fonts */
+/* springboard lessons */
 * {
     box-sizing: border-box; /* Uses border-box in all elements. */
   }
@@ -10,8 +15,7 @@
     padding: 2rem;
     color: #0e2b30; 
     border: 2px solid #121512;
-    background-image: linear-gradient( rgb(90, 205, 234),rgb(92, 146, 164));
-      
+    background-image: linear-gradient(rgb(90, 205, 234), rgb(92, 146, 164));
   }
   
   h1 {
@@ -25,11 +29,11 @@
     font-weight: 600; 
     text-transform: uppercase; /* Nice idea from example to have uppercase  */
     text-shadow: 1px 1px 2px rgb(220, 220, 34), 0 0 1em rgb(171, 212, 109), 0 0 0.2em blue;
-}
+  }
   
   h3 {
-      font-size: 1.2rem; 
-      /* play with size  */
+    font-size: 1.4rem; 
+    /* play with size  */
   }
   
   h1, h2, h3 {
@@ -37,13 +41,13 @@
   }
   
   p, li, table, form {
-    font-size: 0.8rem; /* Set font */
+    font-size: 0.9rem; /* Set font */
   }
   
   a {
     text-decoration: none; /* Remove underline from links */
-    
   }
+  
   /* transition for links*/
   a:hover { 
     color: gold;
@@ -83,8 +87,8 @@
     border: 2px solid #091009;
     background-color: rgb(90, 205, 234);
     border-radius: 50%;
-    
   }
+  
   form button:hover {
     transform: scale(1.2);
   }
@@ -148,13 +152,12 @@
     margin-right: 2rem;
   }
   
-  
   .projects .message-container {
     margin-top: 2rem;
     text-align: center;
   }
   
-  /*Contact */
+  /* Contact */
   .contact .form-container {
     display: flex;
     align-items: center;
@@ -193,8 +196,17 @@
     margin-right: 1rem;
   }
   
+  /* Ordered List Styling */
+  ol {
+    margin: 0 auto; /* Center the list by setting left and right margins to auto */
+    padding: 0; /* Remove any default padding */
+    list-style-position: inside; /* Ensure the list marker is inside the element */
+    display: flex;
+    flex-direction: column; /* Arrange list items in a column */
+    align-items: flex-start; /* Align list items to the start of the container */
+  }
   
-  /* MEDIA QUERIES*/
+  /* MEDIA QUERIES */
   @media (max-width: 1024px) {
     body {
       margin: 1rem;
