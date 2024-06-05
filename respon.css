@@ -1,0 +1,311 @@
+* {
+    box-sizing: border-box; /* Uses border-box in all elements. */
+  }
+  
+  body {
+    font-family: papyrus, Arial, Helvetica, sans-serif;  
+    font-size: 16px; 
+    line-height: 2;
+    margin: 2rem;
+    padding: 2rem;
+    color: #0e2b30; 
+    border: 2px solid #121512;
+    background-image: linear-gradient( rgb(90, 205, 234),rgb(92, 146, 164));
+      
+  }
+  
+  h1 {
+    font-size: 2.0rem; /* Increase heading. */
+    text-align: center; /* Center. */
+    text-shadow: 1px 1px 2px rgb(220, 220, 34), 0 0 1em rgb(171, 212, 109), 0 0 0.2em blue;
+  }
+  
+  h2 {
+    font-size: 1.6rem; /* Explore sizing */
+    font-weight: 600; 
+    text-transform: uppercase; /* Nice idea from example to have uppercase  */
+    text-shadow: 1px 1px 2px rgb(220, 220, 34), 0 0 1em rgb(171, 212, 109), 0 0 0.2em blue;
+}
+  
+  h3 {
+      font-size: 1.2rem; 
+      /* play with size  */
+  }
+  
+  h1, h2, h3 {
+    padding-bottom: 1rem; /* Add padding */
+  }
+  
+  p, li, table, form {
+    font-size: 0.8rem; /* Set font */
+  }
+  
+  a {
+    text-decoration: none; /* Remove underline from links */
+    
+  }
+  /* transition for links*/
+  a:hover { 
+    color: gold;
+  }
+  
+  header section {
+    display: flex;
+    justify-content: space-between; /* Provide space */
+    height: 20rem;
+  }
+  
+  main section,
+  footer section {
+    margin: 4rem 0; /* Separate using collapsing margins. */
+    border-top: 2px solid #050c05; /* delineate */
+  }
+  
+  /* Consistent styling */
+  form input,
+  form textarea,
+  form select {
+    padding: 0.1rem 0.2rem;
+    color: #765ed8;
+    border: 2px solid #eb69dc;
+    background-color: rgb(90, 205, 234);
+  }
+  
+  form fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+  
+  form button {
+    padding: 0.5rem 1rem;
+    color: #7334e7;
+    border: 2px solid #091009;
+    background-color: rgb(90, 205, 234);
+    border-radius: 50%;
+    
+  }
+  form button:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Remove outlines from form elements */
+  form input,
+  form textarea {
+    outline: none;
+  }
+  
+  /* Introduction */
+  header section .image-container {
+    align-self: flex-start; /* Position to start */
+  
+    /* Sizing image */
+    width: 15rem; 
+    height: 15rem; 
+  }
+  
+  header section .image-container img {
+    display: block;
+  
+    /* maintain image inside */
+    width: 100%;
+    height: 100%;
+    border: .1em solid black;
+    border-radius: 50%; /* Round image */
+    object-fit: cover; 
+    object-position: 100% 20%;
+  }
+  
+  header section .name-container {
+    align-self: center; /* Center Position */
+  }
+  
+  header section .information-container {
+    align-self: flex-end; /* End Position */
+  }
+  
+  /* Technologies */
+  .technologies .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Tools */
+  .tools .container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Projects */
+  .project-entry {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .project-entry .image-container {
+    display: flex;
+    justify-content: center;
+    margin-right: 2rem;
+  }
+  
+  
+  .projects .message-container {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  /*Contact */
+  .contact .form-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .contact .text-input-container,
+  .contact .select-container,
+  .contact .checkbox-container {
+    display: flex;
+    width: 30rem;
+    margin-bottom: 1rem;
+  }
+  
+  .contact .text-input-container label,
+  .contact .select-container label {
+    flex-grow: 1;
+  }
+  
+  .contact .text-input-container input,
+  .contact .text-input-container textarea,
+  .contact .select-container select {
+    width: 20rem;
+  }
+  
+  .contact .text-input-container textarea {
+    height: 10rem;
+  }
+  
+  .contact .button-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .contact .button-container button[type=reset] {
+    margin-right: 1rem;
+  }
+  
+  
+  /* MEDIA QUERIES*/
+  @media (max-width: 1024px) {
+    body {
+      margin: 1rem;
+      padding: 1rem;
+    }
+  
+    header section {
+      flex-direction: column;
+      height: auto;
+      align-items: center;
+    }
+  
+    header section .image-container {
+      width: 10rem;
+      height: 10rem;
+    }
+  
+    header section .name-container,
+    header section .information-container {
+      align-self: center;
+    }
+  
+    .technologies .container,
+    .tools .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .project-entry {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .project-entry .image-container {
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+  
+    .contact .text-input-container,
+    .contact .select-container,
+    .contact .checkbox-container {
+      width: 100%;
+    }
+  
+    .contact .text-input-container input,
+    .contact .text-input-container textarea,
+    .contact .select-container select {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+  
+    header section .image-container {
+      width: 8rem;
+      height: 8rem;
+    }
+  
+    header section .name-container h1 {
+      font-size: 1.5rem;
+    }
+  
+    .contact .text-input-container input,
+    .contact .text-input-container textarea,
+    .contact .select-container select {
+      font-size: 0.8rem;
+    }
+  
+    .contact .text-input-container textarea {
+      height: 8rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 12px;
+      margin: 0.5rem;
+      padding: 0.5rem;
+    }
+  
+    header section {
+      padding: 0;
+    }
+  
+    header section .image-container {
+      width: 6rem;
+      height: 6rem;
+    }
+  
+    header section .name-container h1 {
+      font-size: 1.2rem;
+    }
+  
+    .contact .text-input-container,
+    .contact .select-container,
+    .contact .checkbox-container {
+      width: 100%;
+    }
+  
+    .contact .text-input-container input,
+    .contact .text-input-container textarea,
+    .contact .select-container select {
+      width: 100%;
+      font-size: 0.6rem;
+    }
+  
+    .contact .text-input-container textarea {
+      height: 6rem;
+    }
+  }
+  
