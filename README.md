@@ -1,1 +1,1 @@
-# responcv
+# This is a project for Springboard to have a responsive digital cv. Create a consistent style with flexbox, borderbox tranisitions, flow to page, include tables, ordered and unordered lists.Have a backup font for devices that may not have the chosen font. Include an animation for element such as a button. Have at least 3 sections to highlight skills. MAke sure html and css pass a validator.

@@ -1,8 +1,7 @@
-/* General CSS */
-/* attribute to and thanks for inspiration */
-/*  mdn flexbox concepts: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox*/
+/* Attribute to and thanks for inspiration */
+/* MDN flexbox concepts: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox*/
 /* https://fonts.google.com/  for fonts */
-/* springboard lessons */
+/* Springboard lessons */
 * {
     box-sizing: border-box; /* Uses border-box in all elements. */
   }
@@ -62,7 +61,7 @@
   main section,
   footer section {
     margin: 4rem 0; /* Separate using collapsing margins. */
-    border-top: 2px solid #050c05; /* delineate */
+    border-top: 2px solid #050c05; /* Delineate */
   }
   .companies {
     display: flex;
@@ -104,8 +103,8 @@
     color: #4973c6;
     border: 2px solid #091009;
     background-color: rgb(90, 205, 234);
-    /* border-radius: 50%; */
-    /* looks better as rectangle but interesting for future */
+    /* Border-radius: 50%; */
+    /* Looks better as rectangle but interesting for future */
   }
   
   form button:hover {
@@ -131,7 +130,7 @@
   header section .image-container img {
     display: block;
   
-    /* maintain image inside */
+    /* Maintain image inside */
     width: 100%;
     height: 100%;
     border: .1em solid black;
@@ -161,24 +160,18 @@
   }
   
   /* Projects */
-  .project-entry {
+   .project-link { 
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .project-entry {
-    display: flex;
-    justify-content: center;
-    margin-right: 2rem;
-  }
+    margin-right: 2em;
+  } 
   
   .projects .message-container {
     margin-top: 2rem;
     text-align: center;
   }
 
-  
   /* Contact */
   .contact .form-container {
     display: flex;
@@ -251,12 +244,12 @@
       align-items: center;
     }
   
-    .project-entry {
+    .project-link {
       flex-direction: column;
       align-items: center;
     }
   
-    .project-entry .image-container {
+    .project-link .image-container {
       margin-right: 0;
       margin-bottom: 1rem;
     }
