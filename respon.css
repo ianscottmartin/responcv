@@ -76,7 +76,7 @@
     flex-direction: column;
     align-items: center;
   }
-  .webdev {
+  .web-dev {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -88,7 +88,7 @@
   form select {
     padding: 0.1rem 0.2rem;
     color: #765ed8;
-    border: 2px solid #eb69dc;
+    border: 2px solid #8cc2d8;
     background-color: rgb(90, 205, 234);
   }
   
@@ -100,10 +100,11 @@
   
   form button {
     padding: 0.5rem 1rem;
-    color: #7334e7;
+    color: #4973c6;
     border: 2px solid #091009;
     background-color: rgb(90, 205, 234);
-    border-radius: 50%;
+    /* border-radius: 50%; */
+    /* looks better as rectangle but interesting for future */
   }
   
   form button:hover {
