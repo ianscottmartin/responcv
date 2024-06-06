@@ -64,7 +64,24 @@
     margin: 4rem 0; /* Separate using collapsing margins. */
     border-top: 2px solid #050c05; /* delineate */
   }
-  
+  .companies {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .universities {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .webdev {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
   /* Consistent styling */
   form input,
   form textarea,
@@ -144,9 +161,10 @@
   .project-entry {
     display: flex;
     justify-content: center;
+    align-items: center;
   }
   
-  .project-entry .image-container {
+  .project-entry {
     display: flex;
     justify-content: center;
     margin-right: 2rem;
@@ -156,6 +174,7 @@
     margin-top: 2rem;
     text-align: center;
   }
+
   
   /* Contact */
   .contact .form-container {
@@ -196,16 +215,8 @@
     margin-right: 1rem;
   }
   
-  /* Ordered List Styling */
-  ol {
-    margin: 0 auto; /* Center the list by setting left and right margins to auto */
-    padding: 0; /* Remove any default padding */
-    list-style-position: inside; /* Ensure the list marker is inside the element */
-    display: flex;
-    flex-direction: column; /* Arrange list items in a column */
-    align-items: flex-start; /* Align list items to the start of the container */
-  }
-  
+
+   
   /* MEDIA QUERIES */
   /* vary sizes for devices */
   @media (max-width: 1024px) {
