@@ -33,7 +33,7 @@
   
   h3 {
     font-size: 1.4rem; 
-    /* play with size  */
+    /* Play with size  */
   }
   
   h1, h2, h3 {
@@ -41,14 +41,14 @@
   }
   
   p, li, table, form {
-    font-size: 0.9rem; /* Set font */
+    font-size: 0.9rem; /* Set font and combine in shorthand*/
   }
   
   a {
     text-decoration: none; /* Remove underline from links */
   }
   
-  /* transition for links*/
+  /* Transition for links*/
   a:hover { 
     color: gold;
   }
@@ -87,7 +87,6 @@
   form textarea,
   form select {
     padding: 0.1rem 0.2rem;
-    color: #765ed8;
     border: 2px solid #8cc2d8;
     background-color: rgb(90, 205, 234);
   }
@@ -96,6 +95,8 @@
     margin: 0;
     padding: 0;
     border: none;
+    
+
   }
   
   form button {
@@ -115,6 +116,7 @@
   form input,
   form textarea {
     outline: none;
+    
   }
   
   /* Introduction */
@@ -182,6 +184,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    
   }
   
   .contact .text-input-container,
